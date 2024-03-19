@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class TestContext {
 
-    private WebDriver driver = null;
+    private WebDriver driver;
 
     public WebDriver getDriver() {
         if (driver == null) {
