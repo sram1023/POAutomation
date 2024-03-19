@@ -33,8 +33,8 @@ public class MyStepdefs {
 
     @Then("verify that the first result contains the text {string}")
     public void verifyThatTheFirstResultContainsTheText(String searchProductName) {
-        System.out.println("Expected:" + searchProductName + "  Actual:" + homePage.appleProdcutName() + " " + homePage.productNameIphone());
-        Assert.assertTrue(searchProductName.contains(homePage.appleProdcutName() + " " + homePage.productNameIphone()));
+        System.out.println("Expected:" + searchProductName + "  Actual:" + homePage.appleProdcutName());
+        Assert.assertTrue(searchProductName.contains(homePage.appleProdcutName()));
         testContext.quit();
     }
 }

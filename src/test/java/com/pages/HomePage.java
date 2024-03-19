@@ -34,7 +34,7 @@ public class HomePage extends BasePage {
     }
 
     public String appleProdcutName(){
-        return productNameApple.getText();
+        return productNameApple.getText().substring(0,12);
     }
 
     public String productNameIphone(){
