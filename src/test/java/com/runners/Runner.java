@@ -13,5 +13,5 @@ import io.cucumber.junit.CucumberOptions;
         monochrome = true,
         publish = true
 )
-class CucumberRunner {
+public class Runner {
 }
