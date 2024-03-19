@@ -14,6 +14,12 @@ public class TestContext {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
+            options.addArguments("disable-infobars");
+            options.addArguments("--disable-extensions");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--headless");
+            options.addArguments("--remote-debugging-pipe");
             driver = new ChromeDriver(options);
             driver.manage().window().maximize();
         }
